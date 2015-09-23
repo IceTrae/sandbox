@@ -1,0 +1,46 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "description": "Sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trae Robbins",
+  "devDependencies": {
+    "bower": "^1.5.2",
+    "bower-resolve": "^2.2.1",
+    "browserify": "^5.10.1",
+    "browserify-shim": "^3.8.2",
+    "deamdify": "^0.1.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.4.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-if": "^1.2.4",
+    "gulp-jade": "^0.7.0",
+    "gulp-notify": "^1.6.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-server": "^0.1.0",
+    "gulp-streamify": "0.0.5",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^3.0.1",
+    "lodash": "^2.4.1",
+    "pretty-hrtime": "^0.2.1",
+    "require-dir": "^0.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^0.1.1",
+    "vinyl-transform": "0.0.1"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
